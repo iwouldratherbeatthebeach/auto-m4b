@@ -1,10 +1,12 @@
 FROM phusion/baseimage:jammy-1.0.1
 #FROM phusion/baseimage:master
 
+
 #Basic Container
 RUN echo "---- INSTALL RUNTIME PACKAGES ----" && \
     apt-get update && apt-get install -y --no-install-recommends \
-    python3-pip \
+    nasm \
+	python3-pip \
     git \
     #ffmpeg \
     dnsutils \
